@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENA TIKTOK</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-orb orb1"></div>
+    <div class="bg-orb orb2"></div>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <i class="fab fa-tiktok"></i>
+                <h1>SENA<span>TIKTOK</span></h1>
+            </div>
+            <p>Download tanpa watermark</p>
+        </div>
+
+        <!-- Main Card -->
+        <div class="card">
+            <input type="url" 
+                   id="urlInput" 
+                   class="input" 
+                   placeholder="Paste URL TikTok..."
+            
+            <button class="btn" id="downloadBtn">
+                <i class="fas fa-download"></i>
+                Download
+            </button>
+
+            <div class="examples">
+                <span class="example" data-url="https://www.tiktok.com/@tiktok/video/7123456789012345678">URL Panjang</span>
+                <span class="example" data-url="https://vt.tiktok.com/ZSmU9ghmK/">URL Pendek</span>
+            </div>
+        </div>
+
+        <!-- Loading -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Memproses...</p>
+        </div>
+
+        <!-- Error -->
+        <div class="error" id="error">
+            <i class="fas fa-exclamation-circle"></i>
+            <span id="errorText">Error</span>
+        </div>
+
+        <!-- Result -->
+        <div class="result" id="result">
+            <div class="result-header">
+                <i class="fas fa-check-circle"></i>
+                <span>Siap download</span>
+            </div>
+            
+            <div class="video">
+                <img src="" alt="" id="videoThumb">
+                <div class="video-info">
+                    <h4 id="videoTitle">-</h4>
+                    <p id="videoAuthor">@username</p>
+                    <div class="stats">
+                        <span><i class="fas fa-heart"></i> <span id="videoLikes">0</span></span>
+                        <span><i class="fas fa-comment"></i> <span id="videoComments">0</span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#" class="download-link" id="downloadVideo">
+                <i class="fas fa-video"></i> Video MP4
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer (Hanya Logo) -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://wa.me/6282197350500" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/SenaLucien" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/_senalucien" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>© SENA TIKTOK • DOWNLOADER TIKTOK VIDEO</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
